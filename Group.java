@@ -73,27 +73,27 @@ public class Group {
 				while (true);
 				
 				////------------------------------------------------------
-				System.out.println("Please input sex (true/false)");
-				do{
-					try{
-						//System.out.println("Please input sex (true/false)");
-						groupArray[i].setSex(in.nextBoolean());
-						break;
-					}
-					catch (InputMismatchException e){ System.out.println("please input true or false for sex");}
-				}
-				while (true);
-				
 //				System.out.println("Please input sex (true/false)");
 //				do{
 //					try{
 //						//System.out.println("Please input sex (true/false)");
-//						groupArray[i].setSex(Boolean.parseBoolean(in.next()));
+//						groupArray[i].setSex(in.nextBoolean());
 //						break;
 //					}
-//					catch (Exception e){ System.out.println("please input true or false for sex");}
+//					catch (InputMismatchException e){ System.out.println("please input true or false for sex");}
 //				}
 //				while (true);
+				
+				System.out.println("Please input sex (true/false)");
+				do{
+					try{
+						//System.out.println("Please input sex (true/false)");
+						groupArray[i].setSex(Boolean.parseBoolean(in.next()));
+						break;
+					}
+					catch (Exception e){ System.out.println("please input true or false for sex");}
+				}
+				while (true);
 				
 				
 				
